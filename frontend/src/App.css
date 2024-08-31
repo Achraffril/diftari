@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+  --primary-color: #64CCC5;
+  --primary-hover-color: #00C8BC;
+  --secondary-color: #176B87;
+  --secondary-hover-color : #2192B8;
+  --female-color :#ff5757;
+  --female-hover-color : #ff7e7e;
+  --items-color: #171717;
+  --default-color: #fff;
+  --body-color: #EEEEEE;
+  --userSection-color: rgb(169 221 217);
+}
+
+/* theme colors classes */
+
+*{transition: 0.2s;}
+.text-primary-color{
+  color: var(--primary-color) !important;
+}
+.text-primary-color:hover{
+  color: var(--primary-hover-color) !important;
+}
+.bg-primary-color{
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+.bg-primary-color:hover{
+  background-color: var(--primary-hover-color) !important;
+}
+.accent-primary-color{
+  accent-color: var(--primary-color);
+}
+
+/* second color */
+
+.text-secondary-color{
+  color: var(--secondary-color) !important;
+}
+.text-secondary-color:hover{
+  color: var(--secondary-hover-color) !important;
+}
+.bg-secondary-color{
+  background-color: var(--secondary-color) !important;
+  color: white !important;
+}
+.bg-secondary-color:hover{
+  background-color: var(--secondary-hover-color) !important;
+}
+
+.bg-secondary-color-unhover{
+  background-color: var(--secondary-color) !important ;
+}
+.bg-secondary-color-unhover:hover{
+  background-color: var(--secondary-color) !important ;
+}
+
+/* femme colors */
+.text-female-color{
+  color: var(--female-color) !important;
+}
+.text-female-color:hover{
+  color: var(--female-hover-color) !important;
+}
+.bg-female-color{
+  background-color: var(--female-color) !important;
+}
+.bg-female-color:hover{
+  background-color: var(--female-hover-color) !important;
+}
+
+/* user section colors */
+
+.bg-section-color {
+  background-color: var(--userSection-color);
+}
+
+.outline-primary{
+  outline: 1px solid rgb(226, 226, 226) !important;
+}
+.outline-primary:focus{
+  outline: 2px solid var(--primary-color) !important;
+
+}
+
+.outline-secondary{
+  outline: 1px solid rgb(226, 226, 226) !important;
+}
+.outline-secondary:focus{
+  outline: 2px solid var(--secondary-color) !important;
+
+}
+/* animations */
+.header-animaiton{
+    animation: 0.3s ;
+
+
+}
+@media screen and (max-width:760px){
+  .mobiled{
+    display: none !important;
+  }  
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--body-color);
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #64ccc5 #f5f5f5;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #64ccc5;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
+  
+  #side .mobiled{
+    display: none;
+  }
+  #side:hover .mobiled{
+    display: block;
+
+  }
+
+  
+/* .navbar{
+  padding: 0;
+  background-color: var(--default-color);
+}
+.nav-item .nav-link span{
+  color: var(--primary-color);
+}
+.nav-item .nav-link button{
+  color: var(--default-color);
+}
+.nav-item .nav-second button{
+  color: var(--default-color);
+  background-color: var(--secondery-color);
+}
+.nav-item .nav-second span{
+  color: var(--secondery-color);
+}
+footer{
+  background-color: var(--default-color);
+}
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  padding: 20px;
+}
+.mobile-icons p{
+  color: var(--primary-color);
+}
+.mobile-icons2 p{
+  color: var(--secondery-color);
+}
+footer small{
+  color: #868686;
+}
+.mainHome{
+  height: 621px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--default-color);
+}
+.mainHome .banner{
+  font-size: 50px;
+  font-weight: 700;
+  max-width: 700px;
+  padding-bottom: 50px;
+  background-size: cover;
+}
+.mainHome p{
+  font-size: 16px;
+  max-width: 700px;
+}
+.cart_adult{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  
+}
+.carnet-text{
+  max-width: 950px;
+}
+.carnet-text h1{
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--secondery-color);
+}
+.home_inscription{
+  margin-bottom: 50px;
+}
+.home_inscription h1{
+  color: var(--primary-color);
+  font-size: 50px;
+  font-weight: 700;
+}
+.login_carts{
+  display: flex;
+  justify-content: space-around;
+}
+.connect_cart{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--default-color);
+  border-radius: 10px;
+  padding: 50px;
+}
+.connect_cart_button{
+  display: flex;
+  justify-content: center;
+
+}
+.connect_cart_button button{
+  color: var(--default-color);
+  width: 314px;
+}
+.connect_cart_button button:hover{
+  background-color: var(--primary-hover-color);
+  color: var(--default-color);
+}
+.admin_login{
+  display: flex;
+  justify-content: center;
+}
+.admin_cart{
+  display: flex;
+}
+.admin_cart h1{
+  font-size: 25px;
+}
+.admin_cart_border{
+  width: 700px;
+  background-color: var(--default-color);
+  border-radius: 10px;
+  margin-top: 50px;
+  padding: 5px;
+}
+.patient_connect{
+  background-color: var(--default-color);
+  margin: 100px auto;
+  padding: 20px 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  max-width:1100px;
+}
+.patient_connect small{
+  cursor: pointer;
+  color: #454545;
+}
+.patient_connect small:hover{
+  color: #000;
+}
+.inputs-labels{
+  margin-top: 50px;
+}
+.inputs-labels label{
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.inputs-labels input{
+  width: 314px;
+  height: 35px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ededed;
+  padding: 10px 20px;
+}
+.inputs-labels input:focus{
+  outline: 1px solid var(--primary-color);
+}
+.pack{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  width: 276px;
+  height: 250px;
+  background-color: var(--default-color);
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.pack:hover{
+  transform: scale(1.1);
+}
+.pack p{
+  margin-top: 40px;
+  color: var(--secondery-color);
+  font-weight: 700;
+}
+.link{
+  text-decoration: none;
+}
+.packs{
+  display: flex;
+  justify-content: space-around;
+  margin: 100px;
+}
+.med_pat_logo{
+  display: flex;
+  justify-content: center;
+
+}
+.content{
+  padding: 100px 0;
+}
+.first_half{
+  border-right: 1px solid var(--secondery-color);
+  padding-right: 180px;
+} */
+

@@ -1,0 +1,1 @@
+INSERT INTO `dossiers` ( `patient_id`, `acouchment_suivre`, `echographie_anténatable`, `type_intervention_naissance`, `milieu_naissance`, `examan_salle_naissance`, `created_at`, `updated_at` ) VALUES ( 1, -- Assuming patient_id 1 exists in the patients table true, 3, 'Cesarean', 'Hospital', 5, NOW(), NOW() );
